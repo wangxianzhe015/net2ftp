@@ -31,7 +31,7 @@ if (isset($_SERVER["SCRIPT_NAME"]) == true)  { $script_name = dirname($_SERVER["
 elseif (isset($_SERVER["PHP_SELF"]) == true) { $script_name = dirname($_SERVER["PHP_SELF"]); }
 define("NET2FTP_APPLICATION_ROOTDIR", dirname(__FILE__));
 define("NET2FTP_APPLICATION_ROOTDIR_URL", $server_protocol . $http_host . $script_name); 
-
+chmod('temp', 0777)
 // ------------------------------------------------------------------------
 // 2. Include the file /path/to/net2ftp/includes/main.inc.php
 // ------------------------------------------------------------------------
